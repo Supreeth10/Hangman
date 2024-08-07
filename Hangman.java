@@ -72,14 +72,15 @@ public class Hangman {
     public static void main(String[] args) {
 
         /**
-         * Where did you leave? 
-         * You were working on the logic to update the guessesWord correctly 
-         * You might need to use Char where needed instead of String
-         * have to handle all the char and string issues 
+         * TO DO
+         * Optimize code 
+         * Remove extra comments
+         * Add relevent comments 
+         * Test code 
          */
         
         char guessedChar;
-        String guessesWord = ""; // needs to be set to _ x len(targetString)
+        String guessesWord = ""; 
         String missesString = "";
         boolean gameOver = false;
         int noWrongGuesses = 0;
@@ -157,7 +158,7 @@ public class Hangman {
         return words[randomInt];
     }
 
-    //checkGuess(): returns true if the user guessed a letter from the word correctly.
+    //checkGuess(): -> returns true if the user guessed a letter from the word correctly.
     public static boolean checkGuess(String guessedChar,String targetString){
         if(targetString.contains(guessedChar)){
             return true;
@@ -176,8 +177,6 @@ public class Hangman {
         System.out.println("Word:   "+tempStr);
         System.out.println("\nMisses:  "+missString);
     }
-
-    
 
 }
 
